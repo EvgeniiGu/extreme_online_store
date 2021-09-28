@@ -117,4 +117,21 @@
     <ownedEnd xmi:id="_-IXO8B0vEeyeoaz4zktFHQ" type="_X2OwwB0vEeyeoaz4zktFHQ" association="_-IWn4B0vEeyeoaz4zktFHQ"/>
     <ownedEnd xmi:id="_-IX2AB0vEeyeoaz4zktFHQ" type="_kVFeIB0vEeyeoaz4zktFHQ" association="_-IWn4B0vEeyeoaz4zktFHQ"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_uJcJUCA-EeyytLpBpDIR1A" name="Employee" visibility="public" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1inWUCA-EeyytLpBpDIR1A" name="Courier" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_CeJYoCA_EeyytLpBpDIR1A" client="_uJcJUCA-EeyytLpBpDIR1A" supplier="_1inWUCA-EeyytLpBpDIR1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ImPYQCA_EeyytLpBpDIR1A" name="Dispatcher" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_KkAsgCA_EeyytLpBpDIR1A" client="_uJcJUCA-EeyytLpBpDIR1A" supplier="_ImPYQCA_EeyytLpBpDIR1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LSgxQCA_EeyytLpBpDIR1A" name="Storekeeper" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_OzQUICA_EeyytLpBpDIR1A" client="_uJcJUCA-EeyytLpBpDIR1A" supplier="_LSgxQCA_EeyytLpBpDIR1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4uyh8CA_EeyytLpBpDIR1A" name="Admin" visibility="public"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Qmv1kCBAEeyytLpBpDIR1A" name="AbstractList" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XSVj0CBAEeyytLpBpDIR1A" name="ListGoods" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_hOPzUCBAEeyytLpBpDIR1A" client="_Qmv1kCBAEeyytLpBpDIR1A" supplier="_XSVj0CBAEeyytLpBpDIR1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_me838CBAEeyytLpBpDIR1A" name="OrderList" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oxYNkCBAEeyytLpBpDIR1A" client="_Qmv1kCBAEeyytLpBpDIR1A" supplier="_me838CBAEeyytLpBpDIR1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_F0eJUCBBEeyytLpBpDIR1A" name="ListEmployees" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_JzgKsCBBEeyytLpBpDIR1A" client="_Qmv1kCBAEeyytLpBpDIR1A" supplier="_F0eJUCBBEeyytLpBpDIR1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Y6_uQCBBEeyytLpBpDIR1A" name="ListOfOrderSets" visibility="public"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_eAkg8CBBEeyytLpBpDIR1A" client="_Qmv1kCBAEeyytLpBpDIR1A" supplier="_Y6_uQCBBEeyytLpBpDIR1A"/>
 </uml:Model>
