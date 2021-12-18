@@ -1,0 +1,136 @@
+.u-section-1 {
+  min-height: 703px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  pointer-events: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-image-1 {
+  min-height: 703px;
+  pointer-events: auto;
+  background-image: url("images/1fe88423480889e970abc62e9d6e.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 60px;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 703px;
+  pointer-events: auto;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px 6px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 223px 98px 0 54px;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 20px 54px 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 30px auto 0 54px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 580px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 580px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 580px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 48px;
+    margin-left: 4px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 444px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 444px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 766px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 666px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
+    min-height: 519px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 419px;
+  }
+}.u-section-2 {
+  min-height: 886px;
+}.u-section-3 .u-sheet-1 {
+  min-height: 500px;
+}
