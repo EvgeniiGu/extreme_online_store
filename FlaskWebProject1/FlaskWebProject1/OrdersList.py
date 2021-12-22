@@ -8,7 +8,7 @@ class OrdersList():
     @staticmethod
     def download_from_file():
         OrdersList.__List = []
-        with sq.connect("extreme_store.db") as con:
+        with sq.connect("FlaskWebProject1/extreme_store.db") as con:
             cur = con.cursor()
             cur.execute("SELECT * FROM orderslist")
             Shit_list = cur.fetchall()

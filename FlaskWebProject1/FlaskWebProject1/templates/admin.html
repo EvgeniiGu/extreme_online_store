@@ -152,21 +152,21 @@
                 </h5>
                 <div class="u-form u-form-1">
                     <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
-                        {% for t in iter_list_employees_ %}
-                        <div class="u-form-group u-form-partition-factor-6 u-form-group-1">
-                            <label for="text-cd3b" class="u-form-control-hidden u-label"></label>
-                            <input type="text" placeholder="" value="{{workers[t]}}" id="text-ab1b" name="{{t}}" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                        </div>
-                        {% endfor %}
-                        <div class="u-align-left u-form-group u-form-submit">
-                            <a href="#" class="u-btn u-btn-submit u-button-style">
-                                Сохранить<br>
-                            </a>
-                            <input type="submit" value="submit" class="u-form-control-hidden">
-                        </div>
-                        <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>
-                        <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>
-                        <input type="hidden" value="" name="recaptchaResponse">
+                            {% for t in iter_list_employees_ %}
+                            <div class="u-form-group u-form-partition-factor-6 u-form-group-1">
+                                <label for="text-cd3b" class="u-form-control-hidden u-label"></label>
+                                <input type="text" placeholder="" value="{{workers[t]}}" id="text-ab1b" name="{{t}}" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                            </div>
+                            {% endfor %}
+                            <div class="u-align-left u-form-group u-form-submit">
+                                <a href="#" class="u-btn u-btn-submit u-button-style">
+                                    Сохранить<br>
+                                </a>
+                                <input type="submit" value="submit" class="u-form-control-hidden">
+                            </div>
+                            <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>
+                            <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>
+                            <input type="hidden" value="" name="recaptchaResponse">
                     </form>
                 </div>
               </div>

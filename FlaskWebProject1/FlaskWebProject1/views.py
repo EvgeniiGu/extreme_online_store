@@ -1,5 +1,5 @@
 from datetime import datetime
-from flask import render_template, request, url_for, redirect
+from flask import render_template, request, url_for, redirect, flash
 from FlaskWebProject1 import app
 import re
 from FlaskWebProject1.Admin import Admin
@@ -17,14 +17,14 @@ def home():
 def admin():
     admin_ = Admin()
     list_employees_ = admin_.get_list_employees()
-    #print(list_employees_)
+    print(list_employees_)
     goods_list_ = admin_.get_list_goods()
     #print(goods_list_)
     ffrrr=['a1','a2','a3','a4','a5']
     test = dict(somethingI = ffrrr,somethingJ = [1,2,3,4,5], iter=len(ffrrr))
     if request.method == 'POST':
         text = list()
-        name_index = []
+        #name_index = []
         iter = 0
         print(1 if re.fullmatch(r'[А-Я][а-я]+$', "Залунин") else 0)
         for i in list_employees_["iter_list_employees_"]:
@@ -33,7 +33,7 @@ def admin():
                 if re.fullmatch(r'[А-Я][а-я]+$', form_get):
                     text.append(form_get)
                 else:
-                    pass
+                    return render_template('admin.html', error=error)
                 iter += 1
             elif iter == 6:
                 iter = 1
@@ -45,6 +45,7 @@ def admin():
                 text.append(form_get)
                 iter += 1
         print(text)
+        admin_.save_new_list_employees(text)
         dict_text = {"iter_list_employees_": list_employees_["iter_list_employees_"], "workers": text}
         return render_template('admin.html',**dict_text, **goods_list_)
     return render_template('admin.html', **list_employees_, **goods_list_)
@@ -56,7 +57,8 @@ def sign_in():
         password = request.form.get('text-1')
         print("login="+login, "password="+password)
         user = User()
-        position = user.recognize(login, password) 
+        position = user.recognize(login, password)
+        print(position)
         if position != -1:
             if position == "Admin":
                 return redirect("/admin.html")

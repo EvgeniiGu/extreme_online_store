@@ -8,6 +8,7 @@ class Admin:
     @staticmethod
     def is_admin(login, password):
         return login == Admin.__LOGIN and password == Admin.__PASSWORD
+
     def get_list_employees(self):
         EmployeesList.download_from_file()
         employees_list = EmployeesList.get_list()
@@ -35,6 +36,10 @@ class Admin:
             new_goods_list.append(goods_list[f].quantity_in_stock)
         new_goods_list_shell = {"iter_goods_list_": iter_goods_list_, "goods": new_goods_list}
         return new_goods_list_shell
+    def save_new_list_employees(self, list):
+        pass
+    def save_new_list_products(self, list):
+        pass
     def create_new_category():
         pass
 

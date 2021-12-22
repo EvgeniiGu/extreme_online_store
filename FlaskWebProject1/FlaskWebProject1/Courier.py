@@ -1,13 +1,13 @@
 from FlaskWebProject1.OrdersSetsList import OrdersSetsList
 from FlaskWebProject1.OrdersSet import OrdersSet
 class Courier:
-    def __init__(self, id):
-        self.__id = id
+    def __init__(self):
+        #self.__id = id
         self.__set_in_delivery = None
         OrdersSetsList.download_from_file()
-        for i in OrdersSetsList.get_list():
-            print
-            if i.id == self.__id: self.__set_in_delivery = i.id_of_the_courier_who_delivers
+        #for i in OrdersSetsList.get_list():
+        #    print
+        #    if i.id == self.__id: self.__set_in_delivery = i.id_of_the_courier_who_delivers
 
     @staticmethod
     def get_list_of_sets():

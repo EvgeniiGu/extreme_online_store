@@ -16,7 +16,7 @@ class EmployeesList():
 
     @staticmethod
     def download_to_file():
-        with sq.connect("extreme_store.db") as con:
+        with sq.connect("FlaskWebProject1/extreme_store.db") as con:
             cur = con.cursor()
             cur.execute("DELETE FROM employeeslist")
             for i in range(len(EmployeesList.__List)):

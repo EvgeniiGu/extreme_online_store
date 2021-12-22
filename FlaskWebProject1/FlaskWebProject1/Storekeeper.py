@@ -4,10 +4,10 @@ from FlaskWebProject1.Good import Good
 from FlaskWebProject1.Order import Order
 
 class Storekeeper():
-    def __init__(self, id):
+    def __init__(self):
         GoodsList.download_from_file()
         OrdersList.download_from_file()
-        self.__id = id
+       # self.__id = id
 
     @staticmethod
     def get_list_of_orders():

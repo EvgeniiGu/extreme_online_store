@@ -11,7 +11,7 @@ class User:
             EmployeesList.download_from_file()
             employees_list = EmployeesList.get_list()
             for j in range(len(employees_list)):
+                print(employees_list[j].login)
                 if employees_list[j].login == login and employees_list[j].password == password:
                     return employees_list[j].position
-                else:
-                    return -1
+            return -1

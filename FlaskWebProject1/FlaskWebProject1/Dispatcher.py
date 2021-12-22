@@ -4,8 +4,8 @@ from FlaskWebProject1.EmployeesList import EmployeesList
 
 
 class Dispatcher():
-    def __init__(self, id):
-        self.__id = id
+    def __init__(self):
+        #self.__id = id
         OrdersSetsList.download_from_file()
         OrdersList.download_from_file()
         EmployeesList.download_from_file()
